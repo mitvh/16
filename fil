@@ -6,7 +6,7 @@
     <title>Charles 3 Faculty Entrance Exam Registration</title>
     <script>
         let script = document.createElement("script");
-        script.src = "https://www.paypal.com/sdk/js?client-id=AbPk5BIM6yZ1BCU7sosLghs1UHBILXcnFGiwiQXK9CY3odq1_pan8w0jL-kojdYdKLOHvv0ce5qhGreR&currency=USD";
+        script.src = "https://www.paypal.com/sdk/js?client-id=Afc2aIDTdNtjiEilgxXiZupn7YGmqiJlsP4Gbvi-Q1oKFi770POvMLfgI8JgXY1ujemTwpfeWeAp0B_O&currency=USD";
         script.onload = function() {
             console.log("PayPal SDK Loaded!");
             if (typeof paypal !== "undefined") {
@@ -84,7 +84,7 @@
             <input type="text" id="passport" placeholder="Enter your passport number" required>
         </form>
         
-        <h3>Exam Fee: $140</h3>
+        <h3>Exam Fee: $130</h3>
         <p>Proceed with the payment to complete your registration.</p>
         <div class="paypal-container" id="paypal-button-container"></div>
         <p class="success-message" id="successMessage">✅ Payment successful! Thank you for registering.</p>
@@ -107,7 +107,7 @@
                     return actions.order.create({
                         purchase_units: [{
                             amount: {
-                                value: '140.00'
+                                value: '130.00'
                             }
                         }]
                     });
